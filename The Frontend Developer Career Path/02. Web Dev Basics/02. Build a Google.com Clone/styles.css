@@ -5,6 +5,7 @@ div {
 .logo-img {
     display: block;
     width: 300px;
+    margin-bottom: 20px;
 }
 
 .search-input {
