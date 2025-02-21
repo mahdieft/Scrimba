@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.red {
+    background: #C71226;
+    height: 100px;
+}
+
+.blue {
+    background: #0D1B88;
+    height: 100px;
+    /* Challenge:
+    Create the flag of The Gambia.
+    But only by applying styles to the blue box! */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.green {
+    background: #397327;
+    height: 100px;
+}
