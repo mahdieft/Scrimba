@@ -1,5 +1,6 @@
-div {
+.main {
     margin-top: 100px;
+    text-align: center;
 }
 
 .logo-img {
@@ -22,9 +23,6 @@ div {
 }
 
 .btn {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 30px;
     background: #DFE1E5;
     border: none;
