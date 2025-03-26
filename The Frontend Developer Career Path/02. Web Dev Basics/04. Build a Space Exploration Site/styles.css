@@ -15,6 +15,10 @@ body {
     width: 100px;
 }
 
+#title {
+    text-shadow: 0 0 4px black;
+}
+
 .btn {
     padding: 6px 12px;
     background-color: white;
