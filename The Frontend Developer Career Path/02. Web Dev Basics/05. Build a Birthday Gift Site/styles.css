@@ -56,3 +56,7 @@ h1, h2, h3, h4, p {
     background-image: url("./images/gift-cover.jpg");
     background-size: cover;
 }
+
+.gift-img:hover {
+    background-image: url("images/happy.gif");
+}
