@@ -1,8 +1,8 @@
 body {
     text-align: center;
     font-family: "Happy Monkey", cursive;
-    background: #a2d2ff;
-    color: #ffffff;
+    background: #A2D2FF;
+    color: #FFFFFF;
 }
 
 h1, h2, h3, h4, p {
@@ -33,4 +33,22 @@ h1, h2, h3, h4, p {
     width: 150px;
     border-radius: 50%;
     border: 6px solid #EFB0C9;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+.gift-img {
+    width: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
 }
