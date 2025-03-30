@@ -64,3 +64,23 @@ body {
 .activity-heading {
     font-size: 16px;
 }
+
+#guide {
+    display: flex;
+    gap: 10px;
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #A8DADC;
+    border-radius: 10px;
+    box-shadow: 0 5px #1D3557;
+    text-align: center;
+}
+
+.guide-image {
+    width: 180px;
+}
+
+.guide-description-name {
+    font-weight: 700;
+}
