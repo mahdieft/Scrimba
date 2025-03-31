@@ -1,1 +1,2 @@
-document.getElementById('count-el').innerText = 5;
+let myAge = 46;
+console.log(myAge);
