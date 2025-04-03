@@ -1,3 +1,7 @@
+const Player = {
+    name: 'Mahdi',
+    chips: 200,
+};
 let firstCard = getRandomCard();
 let secondCard = getRandomCard();
 let cards = [firstCard, secondCard];
@@ -8,6 +12,8 @@ let message = '';
 let messageEl = document.getElementById('message-el');
 let sumEl = document.getElementById('sum-el');
 let cardsEl = document.getElementById('cards-el');
+let playerEl = document.getElementById('player-el');
+playerEl.textContent = Player.name + ': $' + Player.chips;
 
 function startGame() {
     isAlive = true;
