@@ -10,6 +10,11 @@ let sumEl = document.getElementById('sum-el');
 let cardsEl = document.getElementById('cards-el');
 
 function startGame() {
+    isAlive = true;
+    const firstCard = getRandomCard();
+    const secondCard = getRandomCard();
+    cards = [firstCard, secondCard];
+    sum = firstCard + secondCard;
     renderGame();
 }
 
