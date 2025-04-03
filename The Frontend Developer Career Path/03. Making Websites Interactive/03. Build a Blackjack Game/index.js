@@ -41,5 +41,5 @@ function newCard() {
 }
 
 function getRandomCard() {
-    return 5;
+    return Math.floor( Math.random()*13 ) + 1;
 }
