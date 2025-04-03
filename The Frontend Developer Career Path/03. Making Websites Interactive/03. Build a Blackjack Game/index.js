@@ -38,11 +38,12 @@ function renderGame() {
 }
 
 function newCard() {
-    console.log('Drawing a new card from the deck!');
-    let card = getRandomCard();
-    cards.push(card);
-    sum += card;
-    renderGame();
+    if (isAlive && !hasBlackJack) {
+        let card = getRandomCard();
+        cards.push(card);
+        sum += card;
+        renderGame();
+    }
 }
 
 function getRandomCard() {
