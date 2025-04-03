@@ -41,5 +41,12 @@ function newCard() {
 }
 
 function getRandomCard() {
-    return Math.floor( Math.random()*13 ) + 1;
+    const randomNumber = Math.floor(Math.random() * 13) + 1;
+    if (randomNumber > 10) {
+        return 10;
+    }
+    if (randomNumber === 1) {
+        return 11;
+    }
+    return randomNumber;
 }
