@@ -1,6 +1,6 @@
-let username = "per"
-let message = "You have tree new notifications"
+let username = 'Mahdi';
+let message = 'You have tree new notifications';
 
-let messageToUser = message + ", " + username + "!"
+let messageToUser = message + ', ' + username + '!';
 
-console.log(messageToUser)
+console.log(messageToUser);
