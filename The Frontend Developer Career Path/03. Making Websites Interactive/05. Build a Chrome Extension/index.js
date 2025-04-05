@@ -5,7 +5,7 @@ const deleteBtn = document.getElementById('delete-btn');
 const tabBtn = document.getElementById('tab-btn');
 const ulEl = document.getElementById('ul-el');
 
-let leadsFromLocalStorage = JSON.parse(localStorage.getItem('myLeads'));
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem('myLeads'));
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage;
     renderLeads(myLeads);
@@ -32,7 +32,7 @@ tabBtn.addEventListener('click', function () {
     });
 });
 
-renderLeads = (leads) => {
+function renderLeads(leads) {
     let list = '';
     for (let lead of leads) {
         list += `<li><a href="${lead}" target="_blank">${lead}</a></li>`;
