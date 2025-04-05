@@ -2,6 +2,7 @@ let myLeads = ['www.awesomelead.com', 'www.epiclead.com', 'www.greatlead.com'];
 const inputEl = document.getElementById('input-el');
 const inputBtn = document.getElementById('input-btn');
 const deleteBtn = document.getElementById('delete-btn');
+const tabBtn = document.getElementById('tab-btn');
 const ulEl = document.getElementById('ul-el');
 
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem('myLeads'));
@@ -21,6 +22,13 @@ inputBtn.addEventListener('click', function () {
     inputEl.value = '';
     localStorage.setItem('myLeads', JSON.stringify(myLeads));
     renderLeads(myLeads);
+});
+
+const tabs = [
+    {url: 'https://www.linkedin.com/in/per-harald-borgen/'},
+];
+tabBtn.addEventListener('click', function () {
+    console.log(tabs);
 });
 
 renderLeads = (leads) => {
