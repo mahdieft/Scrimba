@@ -8,5 +8,7 @@ inputBtn.addEventListener('click', function () {
 });
 
 for (let lead of myLeads) {
-    ulEl.innerHTML += `<li>${lead}</li>`;
+    const li = document.createElement('li');
+    li.textContent = lead;
+    ulEl.append(li);
 }
