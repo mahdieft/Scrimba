@@ -28,7 +28,9 @@ const tabs = [
     {url: 'https://www.linkedin.com/in/per-harald-borgen/'},
 ];
 tabBtn.addEventListener('click', function () {
-    console.log(tabs);
+    myLeads.push(tabs[0].url);
+    localStorage.setItem('myLeads', JSON.stringify(myLeads));
+    renderLeads(myLeads);
 });
 
 renderLeads = (leads) => {
