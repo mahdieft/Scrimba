@@ -96,6 +96,62 @@ a {
     width: 100px;
 }
 
+/* Info Section */
+.info-section {
+    margin: 250px auto;
+    width: 800px;
+}
+
+.info {
+    margin-left: 200px;
+}
+
+.info-heading {
+    font-size: 48px;
+    margin: 0;
+}
+
+.info a {
+    color: #007000;
+    text-decoration: underline;
+}
+
+.statistics {
+    width: 620px;
+    width: 100%;
+    position: relative;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.info-image {
+    position: absolute;
+    left: -30px;
+    top: -170px;
+    max-width: 200px;
+}
+
+.stat-heading {
+    color: #CCCCCC;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.stat-number {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.stat p {
+    color: #FFFFFF;
+}
+
 /* About Section */
 .about-section {
     background-color: rgba(255, 255, 255, 0.85);
@@ -160,11 +216,3 @@ a {
     display: flex;
     align-items: center;
 }
-
-/*
-Challenge:
-1. Identify any elements on the page where the text contrast is poor.
-2. Change those elements according to the AAA requirements.
-3. Google 'background-blend-mode' and see if you can figure out how to make the background image brighter.
-4. Set the color #333333 to be the default color of our page.
-*/
