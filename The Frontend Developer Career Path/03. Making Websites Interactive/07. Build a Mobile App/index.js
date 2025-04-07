@@ -1,5 +1,5 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js';
-import { getDatabase, ref, push } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-database.js';
+import { getDatabase, ref, push, onVlaue } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-database.js';
 
 const firebaseConfig = {
     databaseURL: 'https://leads-tracker-ap-default-rtdb.firebaseio.com/',
@@ -12,6 +12,10 @@ const inputEl = document.getElementById('input-el');
 const inputBtn = document.getElementById('input-btn');
 const deleteBtn = document.getElementById('delete-btn');
 const ulEl = document.getElementById('ul-el');
+
+onValue(referenceInDB, function (snapshot) {
+    console.log(snapshot.val());
+});
 
 deleteBtn.addEventListener('dblclick', () => {
 });
