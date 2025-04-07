@@ -1,9 +1,10 @@
-// Clearing out the input fields on clicking the submit button
-document.querySelector('.submit-button').onclick = function () {
-    submitForm();
-};
+function sendMessage() {
+    // Get the button element
+    const button = document.getElementById('submitButton');
 
-const submitForm = () => {
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-};
+    // Replace the button with a paragraph
+    button.outerHTML = '<p id="submitMessage" class="submit-message" aria-live="polite">Message sent! ✅</p>';
+
+    // Get the home link element and add focus to it
+    document.getElementById('homeLink').focus();
+}
