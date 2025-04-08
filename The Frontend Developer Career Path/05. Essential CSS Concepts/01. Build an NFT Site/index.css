@@ -24,6 +24,10 @@ h3 {
     font-size: 20px;
 }
 
+p {
+    line-height: 1.5;
+}
+
 /* links */
 a {
     color: #EF5839;
