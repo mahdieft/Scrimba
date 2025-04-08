@@ -69,3 +69,9 @@ section {
     display: flex;
     justify-content: space-between;
 }
+
+footer {
+    color: #5F29A3;
+    text-align: center;
+    padding: 45px 0;
+}
