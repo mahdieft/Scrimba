@@ -35,6 +35,11 @@ a:hover, a:active {
     color: #D4B44C;
 }
 
+.container {
+    width: 620px;
+    margin: 0 auto;
+}
+
 section {
     padding: 45px 0;
 }
