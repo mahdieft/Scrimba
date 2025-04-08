@@ -38,6 +38,40 @@ a:hover, a:active {
     color: #D4B44C;
 }
 
+.btn-dark,
+.btn-mid,
+.btn-light {
+    padding: 10px 19px;
+    border-radius: 4.6px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-dark {
+    background-color: #5F29A3;
+    color: whitesmoke;
+}
+
+.btn-mid {
+    background-color: #F0E0FF;
+    color: #5F29A3;
+}
+
+.btn-light {
+    background-color: whitesmoke;
+    color: #5F29A3;
+}
+
+.btn-dark:hover,
+.btn-mid:hover,
+.btn-light:hover,
+.btn-dark:active,
+.btn-mid:active,
+.btn-light:active {
+    background-color: #F3E885;
+    color: #2B283A;
+}
+
 /* layout */
 header,
 section,
