@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 21px;
     font-weight: 300;
     margin: 0;
@@ -9,19 +9,6 @@ body {
 .container {
     width: 570px;
     margin: 0 auto;
-}
-
-.bold-text {
-    font-weight: 900;
-    display: block;
-}
-
-h1 .bold-text {
-    font-size: 80px;
-}
-
-h2 .bold-text {
-    font-size: 60px;
 }
 
 h1,
@@ -37,8 +24,8 @@ h1 {
 h2 {
     font-size: 42px;
     margin-top: 0;
-    border-top: solid 1px #c4c4c4;
-    border-bottom: solid 1px #c4c4c4;
+    border-top: solid 1px #C4C4C4;
+    border-bottom: solid 1px #C4C4C4;
 
     padding: 20px 0;
     margin-bottom: 20px;
@@ -48,6 +35,25 @@ h3 {
     font-size: 36px;
     font-weight: 900;
     margin-bottom: 0;
+}
+
+.accent-text {
+    display: block;
+}
+
+h1 .accent-text {
+    font-size: 80px;
+}
+
+h2 .accent-text {
+    font-size: 60px;
+}
+
+.accent-text,
+.name,
+time {
+    font-weight: 900;
+    color: #99D930;
 }
 
 p {
@@ -75,8 +81,14 @@ section {
 }
 
 .inverse {
-    color: #fff;
+    color: #FFF;
     background: #252525;
+}
+
+.inverse .btn:hover,
+.inverse .btn:focus {
+    background: #FFF;
+    color: #252525;
 }
 
 .btn {
@@ -91,5 +103,5 @@ section {
 .btn:hover,
 .btn:focus {
     background: #252525;
-    color: #fff;
+    color: #FFF;
 }
