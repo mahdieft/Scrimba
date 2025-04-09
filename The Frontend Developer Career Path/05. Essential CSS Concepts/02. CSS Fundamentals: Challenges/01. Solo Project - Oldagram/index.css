@@ -45,3 +45,7 @@ header {
     margin: 0;
     font-size: 12px;
 }
+
+.post-image {
+    width: 100%;
+}
