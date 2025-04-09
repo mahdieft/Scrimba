@@ -17,7 +17,15 @@ header {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #C6C6C6;
-    padding: 0 15px;
+    padding: 0 10px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+section:last-child {
+    margin-bottom: 0;
 }
 
 .header-logo {
@@ -30,10 +38,10 @@ header {
     align-self: center;
 }
 
-.post-header {
+.post-header-container {
     display: flex;
     gap: 5px;
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 .post-h1 {
@@ -48,4 +56,34 @@ header {
 
 .post-image {
     width: 100%;
+}
+
+.post-icon-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.icon {
+    width: 25px;
+}
+
+.post-like-count {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.post-comment-container {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+}
+
+.post-comment-h2,
+.post-comment-p {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
 }
