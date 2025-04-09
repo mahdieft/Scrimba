@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background: #EDEDED;
 }
 
 .container {
@@ -15,16 +16,32 @@ header, section {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 0 15px;
     border-bottom: 1px solid #C6C6C6;
+    padding: 0 15px;
 }
 
 .header-logo {
     width: 127px;
 }
 
-.header-avatar {
+.avatar {
     width: 34px;
     border-radius: 50%;
     align-self: center;
+}
+
+.post-header {
+    display: flex;
+    gap: 5px;
+    padding: 10px 15px;
+}
+
+.post-h1 {
+    font-size: 13px;
+    margin: 0;
+}
+
+.post-p {
+    margin: 0;
+    font-size: 12px;
 }
