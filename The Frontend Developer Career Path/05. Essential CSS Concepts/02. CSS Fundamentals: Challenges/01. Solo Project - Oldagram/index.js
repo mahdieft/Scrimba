@@ -27,3 +27,31 @@ const posts = [
         likes: 152,
     },
 ];
+
+let posts_html = '';
+for (let post of posts) {
+    posts_html += `
+<section>
+    <div class="post-header-container">
+        <img class="avatar post-avatar" src="${post.avatar}" alt="${post.name}">
+        <div>
+            <h1 class="post-h1">${post.name}</h1>
+            <p class="post-p">${post.location}</p>
+        </div>
+    </div>
+    <img class="post-image" src="${post.post}" alt="Vangogh">
+    <div class="post-icon-container">
+        <img class="icon" src="images/icon-heart.png" alt="heart icon">
+        <img class="icon" src="images/icon-comment.png" alt="comment icon">
+        <img class="icon" src="images/icon-dm.png" alt="dm icon">
+    </div>
+    <p class="post-like-count">${post.likes} likes</p>
+    <div class="post-comment-container">
+        <h2 class="post-comment-h2">${post.username}</h2>
+        <p class="post-comment-p">${post.comment}</p>
+    </div>
+</section>
+`;
+}
+
+document.getElementsByTagName('main')[0].innerHTML = posts_html;
