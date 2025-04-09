@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    background: #EDEDED;
+}
+
+header, section {
+    background-color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.header-logo {
+    width: 127px;
+}
+
+.header-avatar {
+    width: 34px;
+    border-radius: 50%;
+    align-self: center;
+}
