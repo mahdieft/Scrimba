@@ -2,6 +2,8 @@ body {
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 21px;
+    font-weight: 300;
+    margin: 0;
 }
 
 .container {
@@ -9,18 +11,22 @@ body {
     margin: 0 auto;
 }
 
-h1 span,
-h2 span {
+.bold-text {
     font-weight: 900;
     display: block;
 }
 
-h1 span {
+h1 .bold-text {
     font-size: 80px;
 }
 
-h2 span {
+h2 .bold-text {
     font-size: 60px;
+}
+
+h1,
+h2 {
+    font-weight: 300;
 }
 
 h1 {
@@ -29,10 +35,6 @@ h1 {
 
 h2 {
     font-size: 42px;
-}
-
-h1, h2 {
-    font-weight: 300;
 }
 
 h3 {
@@ -52,4 +54,21 @@ a:focus {
 
 .small-text {
     font-size: 16px;
+}
+
+header,
+section {
+    padding: 100px 0;
+}
+
+header {
+    background-color: #D7D7D7;
+}
+
+.about-me {
+    background-color: #FFEAEA;
+}
+
+.articles {
+    background-color: #EAF9FF;
 }
