@@ -1,5 +1,5 @@
 const modal = document.getElementById('modal');
-const modalInner = document.getElementById('modal-inner')
+const modalInner = document.getElementById('modal-inner');
 const modalCloseBtn = document.getElementById('modal-close-btn');
 const consentForm = document.getElementById('consent-form');
 const modalText = document.getElementById('modal-text');
@@ -14,6 +14,10 @@ modalCloseBtn.addEventListener('click', function () {
 
 consentForm.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    const consentFormData = new FormData(consentForm);
+    console.log(consentFormData);
+
     modalText.innerHTML = `
     <div class="modal-inner-loading">
         <img src="images/loading.svg" class="loading">
