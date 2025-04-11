@@ -20,4 +20,8 @@ consentForm.addEventListener('submit', (e) => {
             Uploading your data to the dark web...
         </p>
     </div>`;
+
+    setTimeout(() => {
+        document.getElementById('upload-text').innerText = `Making the sale...`;
+    }, 1500);
 });
