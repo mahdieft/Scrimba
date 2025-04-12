@@ -1,34 +1,45 @@
 import { catsData } from './data.js';
 
 const emotionRadios = document.getElementById('emotion-radios');
-const getImage = document.getElementById('get-image-btn');
+const getImageBtn = document.getElementById('get-image-btn');
 const gifsOnlyOption = document.getElementById('gifs-only-option');
 
-getImage.addEventListener('click', getMatchingCatsArray);
+emotionRadios.addEventListener('change', highlightCheckedOption);
+
+getImageBtn.addEventListener('click', renderCat);
+
+function highlightCheckedOption(e) {
+    const radios = document.getElementsByClassName('radio');
+    for (let radio of radios) {
+        radio.classList.remove('highlight');
+    }
+    document.getElementById(e.target.id).parentElement.classList.add('highlight');
+}
 
 function getMatchingCatsArray() {
     if (document.querySelector('input[type="radio"]:checked')) {
         const selectedEmotion = document.querySelector('input[type="radio"]:checked').value;
         const isGif = gifsOnlyOption.checked;
 
-        return catsData.filter((cat) => {
+        const matchingCatsArray = catsData.filter(function (cat) {
+
             if (isGif) {
                 return cat.emotionTags.includes(selectedEmotion) && cat.isGif;
+            } else {
+                return cat.emotionTags.includes(selectedEmotion);
             }
-            return cat.emotionTags.includes(selectedEmotion);
         });
+        return matchingCatsArray;
     }
 }
 
-emotionRadios.addEventListener('change', highlightCheckedOption);
-
-function highlightCheckedOption(e) {
-    for (let element of document.getElementsByClassName('radio')) {
-        element.classList.remove('highlight');
-    }
-    document.getElementById(e.target.id).parentElement.classList.add('highlight');
+function getSingleCatObject() {
+    console.log(getMatchingCatsArray());
 }
 
+function renderCat() {
+    getSingleCatObject();
+}
 
 function getEmotionsArray(cats) {
     const emotionsArray = [];
@@ -38,7 +49,6 @@ function getEmotionsArray(cats) {
                 emotionsArray.push(emotion);
             }
         }
-
     }
     return emotionsArray;
 }
