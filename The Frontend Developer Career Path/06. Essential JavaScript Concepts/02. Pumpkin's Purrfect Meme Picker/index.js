@@ -1,10 +1,13 @@
-import { catsData } from './data.js';
+import { catsData } from '/data.js';
 
 const emotionRadios = document.getElementById('emotion-radios');
 
-emotionRadios.addEventListener('change', (e) => {
-    console.log(e.target.id);
-});
+emotionRadios.addEventListener('change', highlightCheckedOption);
+
+function highlightCheckedOption(e) {
+    document.getElementById(e.target.id).parentElement.classList.add('highlight');
+}
+
 
 function getEmotionsArray(cats) {
     const emotionsArray = [];
