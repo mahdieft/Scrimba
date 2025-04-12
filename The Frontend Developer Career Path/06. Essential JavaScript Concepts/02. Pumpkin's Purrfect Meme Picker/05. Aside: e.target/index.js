@@ -1,4 +1,5 @@
 const container = document.getElementById('container');
+const clearBtn = document.getElementById('clear-btn');
 
 const products = [
     {
@@ -21,21 +22,27 @@ const products = [
     },
 ];
 
-let productsHtml = ``;
-
 for (let product of products) {
-    productsHtml += `
-    <div class="product">
+    container.innerHTML += `
+    <div class="product on-offer">
         <h3>${product.name}</h3>
-         <h4> £${product.price}</h4>
+        <h4> £${product.price}</h4>
         <img src="${product.image}">
         <button id="${product.id}">Buy Now</button>
     </div>
     `;
 }
 
-container.innerHTML = productsHtml;
-
 container.addEventListener('click', function (e) {
-    document.getElementById(e.target.id).parentElement.style.backgroundColor = 'lightblue';
+    document.getElementById(e.target.id).parentElement.classList.add('purchased');
+    document.getElementById(e.target.id).parentElement.classList.remove('on-offer');
+});
+
+clearBtn.addEventListener('click', function () {
+    const productsArray = document.getElementsByClassName('product');
+    for (let product of productsArray) {
+        product.classList.remove('purchased');
+        product.classList.add('on-offer');
+
+    }
 });
