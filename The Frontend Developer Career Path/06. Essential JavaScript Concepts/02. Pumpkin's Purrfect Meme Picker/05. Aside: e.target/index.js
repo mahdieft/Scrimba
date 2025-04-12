@@ -33,8 +33,9 @@ for (let product of products) {
     </div>
     `;
 }
+
 container.innerHTML = productsHtml;
 
 container.addEventListener('click', function (e) {
-    console.log(e.target.id);
+    document.getElementById(e.target.id).parentElement.style.backgroundColor = 'lightblue';
 });
