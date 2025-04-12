@@ -18,35 +18,36 @@ function getMatchingCatsArray() {
             return cat.emotionTags.includes(selectedEmotion);
         });
     }
+}
 
-    emotionRadios.addEventListener('change', highlightCheckedOption);
+emotionRadios.addEventListener('change', highlightCheckedOption);
 
-    function highlightCheckedOption(e) {
-        for (let element of document.getElementsByClassName('radio')) {
-            element.classList.remove('highlight');
-        }
-        document.getElementById(e.target.id).parentElement.classList.add('highlight');
+function highlightCheckedOption(e) {
+    for (let element of document.getElementsByClassName('radio')) {
+        element.classList.remove('highlight');
     }
+    document.getElementById(e.target.id).parentElement.classList.add('highlight');
+}
 
 
-    function getEmotionsArray(cats) {
-        const emotionsArray = [];
-        for (let cat of cats) {
-            for (let emotion of cat.emotionTags) {
-                if (!emotionsArray.includes(emotion)) {
-                    emotionsArray.push(emotion);
-                }
+function getEmotionsArray(cats) {
+    const emotionsArray = [];
+    for (let cat of cats) {
+        for (let emotion of cat.emotionTags) {
+            if (!emotionsArray.includes(emotion)) {
+                emotionsArray.push(emotion);
             }
-
         }
-        return emotionsArray;
-    }
 
-    function renderEmotionsRadios(cats) {
-        let radioItems = ``;
-        const emotions = getEmotionsArray(cats);
-        for (let emotion of emotions) {
-            radioItems += `
+    }
+    return emotionsArray;
+}
+
+function renderEmotionsRadios(cats) {
+    let radioItems = ``;
+    const emotions = getEmotionsArray(cats);
+    for (let emotion of emotions) {
+        radioItems += `
         <div class="radio">
             <label for="${emotion}">${emotion}</label>
             <input
@@ -56,8 +57,8 @@ function getMatchingCatsArray() {
             name="emotions"
             >
         </div>`;
-        }
-        emotionRadios.innerHTML = radioItems;
     }
+    emotionRadios.innerHTML = radioItems;
+}
 
-    renderEmotionsRadios(catsData);
+renderEmotionsRadios(catsData);
