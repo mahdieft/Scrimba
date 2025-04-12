@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #0C4A6E;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin: 40px auto;
+    padding: 25px;
+    align-items: center;
+    border: 3px solid #A5F3FC;
+    border-radius: 3px;
+    background-color: deepskyblue;
+}
+
+.message {
+    display: flex;
+    gap: 20px;
+    padding: 8px;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-bottom: 3px;
+}
+
+.from {
+    width: 95px;
+}
+
+.message-text {
+    width: 200px;
+}
+
+.read {
+    font-weight: 400;
+    border: 2px solid #A5F3FC;
+    background-color: white;
+}
+
+.unread {
+    font-weight: 800;
+    border: 2px solid #0369A1;
+    background-color: #A5F3FC;
+}
