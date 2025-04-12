@@ -1,10 +1,13 @@
-import { catsData } from '/data.js';
+import { catsData } from './data.js';
 
 const emotionRadios = document.getElementById('emotion-radios');
 
 emotionRadios.addEventListener('change', highlightCheckedOption);
 
 function highlightCheckedOption(e) {
+    for (let element of document.getElementsByClassName('radio')) {
+        element.classList.remove('highlight');
+    }
     document.getElementById(e.target.id).parentElement.classList.add('highlight');
 }
 
@@ -27,16 +30,15 @@ function renderEmotionsRadios(cats) {
     const emotions = getEmotionsArray(cats);
     for (let emotion of emotions) {
         radioItems += `
-            <div class="radio">
-                <input
-                    type="radio"
-                    id="${emotion}"
-                    value="${emotion}"
-                    name="emotion"
-                >
-                <label for="${emotion}">${emotion}</label>
-            </div>
-        `;
+        <div class="radio">
+            <label for="${emotion}">${emotion}</label>
+            <input
+            type="radio"
+            id="${emotion}"
+            value="${emotion}"
+            name="emotions"
+            >
+        </div>`;
     }
     emotionRadios.innerHTML = radioItems;
 }
