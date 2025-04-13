@@ -1,12 +1,8 @@
-import { tweetsData } from './data.js'
+import { tweetsData } from './data.js';
 
-console.log(tweetsData)
+const tweetInput = document.getElementById('tweet-input');
+const tweetBtn = document.getElementById('tweet-btn');
 
-/*
-Challenge:
-1. Put all of the data in its own file called
-   data.js, and export it back into index.js. 
-   Make any changes to index.html that are
-   necessary to make this work.
-2. Log out tweetsData.
-*/
+tweetBtn.addEventListener('click', function () {
+    console.log(tweetInput.value);
+});
