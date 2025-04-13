@@ -50,6 +50,10 @@ function getFeedHtml() {
         let likeIconClass = tweet.isLiked ? 'liked' : '';
         let retweetIconClass = tweet.isRetweeted ? 'retweeted' : '';
 
+        if (tweet.replies.length) {
+            console.log(tweet.uuid);
+        }
+        
         feedHtml += `
             <div class="tweet">
                 <div class="tweet-inner">
