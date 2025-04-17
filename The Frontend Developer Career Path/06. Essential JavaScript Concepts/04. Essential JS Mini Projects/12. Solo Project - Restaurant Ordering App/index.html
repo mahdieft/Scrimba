@@ -5,43 +5,83 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-     <header>
-         <div class="container">
-             <h1>Jimmy’s Diner</h1>
-             <p>The best burgers and pizzas in town.</p>
-         </div>
-     </header>
+    <header>
+        <div class="container">
+            <h1>Jimmy’s Diner</h1>
+            <p>The best burgers and pizzas in town.</p>
+        </div>
+    </header>
     <main>
         <div class="container">
-            <section class="menu-item">
-                <p class="menu-item-image">🍕</p>
-                <div class="menu-item-details">
-                    <h2 class="menu-item-title">Pizza</h2>
-                    <p class="menu-item-description">pepperoni, mushroom, mozzarella</p>
-                    <p class="menu-item-price">$14</p>
-                </div>
-                <p class="menu-item-add">+</p>
+            <section class="menu">
+                <article class="menu-item">
+                    <p class="menu-item-image">🍕</p>
+                    <div class="menu-item-details">
+                        <h2 class="menu-item-title">Pizza</h2>
+                        <p class="menu-item-description">pepperoni, mushroom, mozzarella</p>
+                        <p class="menu-item-price">$14</p>
+                    </div>
+                    <p class="menu-item-add">+</p>
+                </article>
+                <article class="menu-item">
+                    <p class="menu-item-image">🍔</p>
+                    <div class="menu-item-details">
+                        <h2 class="menu-item-title">Hamburger</h2>
+                        <p class="menu-item-description">beef, cheese, lettuce</p>
+                        <p class="menu-item-price">$12</p>
+                    </div>
+                    <p class="menu-item-add">+</p>
+                </article>
+                <article class="menu-item">
+                    <p class="menu-item-image">🍺</p>
+                    <div class="menu-item-details">
+                        <h2 class="menu-item-title">Beer</h2>
+                        <p class="menu-item-description">grain, hops, yeast, water</p>
+                        <p class="menu-item-price">$12</p>
+                    </div>
+                    <p class="menu-item-add">+</p>
+                </article>
             </section>
-            <section class="menu-item">
-                <p class="menu-item-image">🍔</p>
-                <div class="menu-item-details">
-                    <h2 class="menu-item-title">Hamburger</h2>
-                    <p class="menu-item-description">beef, cheese, lettuce</p>
-                    <p class="menu-item-price">$12</p>
+
+            <section class="order">
+                <h2>Your Order</h2>
+                <div class="order-item">
+                    <p class="order-item-name">Pizza</p>
+                    <p class="order-item-remove">remove</p>
+                    <p class="order-item-price">$14</p>
                 </div>
-                <p class="menu-item-add">+</p>
+                <hr>
+                <div class="order-total">
+                    <p class="order-total-title">Total Price</p>
+                    <p class="order-total-total">$26</p>
+                </div>
+                <button class="order-total-complete">Complete Order</button>
             </section>
-            <section class="menu-item">
-                <p class="menu-item-image">🍺</p>
-                <div class="menu-item-details">
-                    <h2 class="menu-item-title">Beer</h2>
-                    <p class="menu-item-description">grain, hops, yeast, water</p>
-                    <p class="menu-item-price">$12</p>
-                </div>
-                <p class="menu-item-add">+</p>
+
+            <section class="summary">
+                <p>Thanks, James! Your order is on its way!</p>
             </section>
         </div>
     </main>
+
+    <section class="modal-payment">
+        <div class="container">
+            <h2>Enter Card Details</h2>
+            <form action="" method="post">
+                <input
+                    type="text" name="payment" id="payment" placeholder="Enter your name" aria-label="Enter your name"
+                    required
+                >
+                <input
+                    type="text" name="card" id="card" placeholder="Enter card number" aria-label="Enter card number"
+                    required
+                >
+                <input type="text" name="cvv" id="cvv" placeholder="Enter CVV" aria-label="Enter CVV" required>
+                <p id="payment-error" class="payment-error"></p>
+                <button type="submit" id="pay">Pay</button>
+            </form>
+        </div>
+    </section>
     <script src="index.js"></script>
 </body>
 </html>
