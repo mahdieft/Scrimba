@@ -1,3 +1,79 @@
 body {
+    width: 650px;
+    margin: 0 auto;
+    background-color: #DEDEDE;
+    font-family: Smythe, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+header, section {
+    padding: 1px 45px;
+}
+
+section {
+    background-color: whitesmoke;
+}
+
+header {
+    background-image: url("./images/burger.png");
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+header h1 {
+    margin: 35px 0 5px 0;
+    font-size: 39px;
+}
+
+header p {
+    margin: 0 0 50px 0;
+    font-size: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: start;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #D2D2D2;
+    margin-top: 45px;
+}
+
+.menu-item:first-child {
+    margin-top: 65px;
+}
+
+.menu-item-details {
+    margin-left: 30px;
+}
+
+.menu-item-image {
+    font-size: 80px;
     margin: 0;
+}
+
+.menu-item-title {
+    font-size: 28px;
+    margin: 8px 0 0;
+}
+
+.menu-item-description {
+    margin: 8px 0 0;
+    color: #8B8B8B;
+}
+
+.menu-item-price {
+    margin: 8px 0 0;
+    font-size: 20px;
+}
+
+.menu-item-add {
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    margin: auto 0 auto auto;
+    padding: 5px 12px 7px 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 200;
+    font-size: 32px;
 }
