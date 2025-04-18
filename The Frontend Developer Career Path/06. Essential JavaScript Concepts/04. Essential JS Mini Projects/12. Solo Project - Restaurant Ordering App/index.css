@@ -8,7 +8,8 @@ body {
     letter-spacing: 0.1rem;
 }
 
-header, section {
+header,
+section {
     padding: 1px 45px;
 }
 
@@ -134,4 +135,14 @@ header p {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top : 25px;
+}
+
+.delivery p {
+    margin: 45px 0;
+    padding: 50px 0;
+    background: #ECFDF5;
+    color: #065F46;
+    font-size: 32px;
+    text-align: center;
+    display: none;
 }
