@@ -77,22 +77,35 @@
     </main>
 
     <section class="modal-payment">
-        <div class="container">
-            <h2>Enter Card Details</h2>
-            <form action="" method="post">
-                <input
-                    type="text" name="payment" id="payment" placeholder="Enter your name" aria-label="Enter your name"
-                    required
-                >
-                <input
-                    type="text" name="card" id="card" placeholder="Enter card number" aria-label="Enter card number"
-                    required
-                >
-                <input type="text" name="cvv" id="cvv" placeholder="Enter CVV" aria-label="Enter CVV" required>
-                <p id="payment-error" class="payment-error"></p>
-                <button type="submit" id="pay">Pay</button>
-            </form>
-        </div>
+        <h2>Enter Card Details</h2>
+        <form action="" method="post" class="form-payment">
+            <input
+                type="text"
+                name="payment"
+                id="payment"
+                placeholder="Enter your name"
+                aria-label="Enter your name"
+                required
+            >
+            <input
+                type="text"
+                name="card"
+                id="card"
+                placeholder="Enter card number"
+                aria-label="Enter card number"
+                required
+            >
+            <input
+                type="text"
+                name="cvv"
+                id="cvv"
+                placeholder="Enter CVV"
+                aria-label="Enter CVV"
+                required
+            >
+            <p id="payment-error" class="payment-error"></p>
+            <button type="submit" id="pay" class="form-payment-pay-button">Pay</button>
+        </form>
     </section>
     <script src="index.js"></script>
 </body>

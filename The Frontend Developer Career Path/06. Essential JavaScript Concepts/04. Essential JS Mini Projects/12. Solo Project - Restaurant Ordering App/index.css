@@ -122,7 +122,8 @@ header p {
     font-size: 28px;
 }
 
-.order-total-complete {
+.order-total-complete,
+.form-payment-pay-button {
     width: 100%;
     box-shadow: 0 1px 2px 0 #0000000D;
     border: none;
@@ -134,7 +135,12 @@ header p {
     color: #FFFFFF;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top : 25px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.form-payment-pay-button {
+    margin: 0;
 }
 
 .delivery p {
@@ -145,4 +151,40 @@ header p {
     font-size: 32px;
     text-align: center;
     display: none;
+}
+
+.modal-payment {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: #FFFFFF;
+    display: none;
+}
+
+.modal-payment h2 {
+    font-family: Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin: 45px 0;
+}
+
+.form-payment {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-payment input {
+    border: 1px solid #757575;
+    border-radius: 5px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
