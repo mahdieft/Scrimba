@@ -20,34 +20,8 @@
     </header>
     <main>
         <div class="container">
-            <section class="menu">
-                <article class="menu-item">
-                    <p class="menu-item-image">🍕</p>
-                    <div class="menu-item-details">
-                        <h2 class="menu-item-title">Pizza</h2>
-                        <p class="menu-item-description">pepperoni, mushroom, mozzarella</p>
-                        <p class="menu-item-price">$14</p>
-                    </div>
-                    <p class="menu-item-add">+</p>
-                </article>
-                <article class="menu-item">
-                    <p class="menu-item-image">🍔</p>
-                    <div class="menu-item-details">
-                        <h2 class="menu-item-title">Hamburger</h2>
-                        <p class="menu-item-description">beef, cheese, lettuce</p>
-                        <p class="menu-item-price">$12</p>
-                    </div>
-                    <p class="menu-item-add">+</p>
-                </article>
-                <article class="menu-item">
-                    <p class="menu-item-image">🍺</p>
-                    <div class="menu-item-details">
-                        <h2 class="menu-item-title">Beer</h2>
-                        <p class="menu-item-description">grain, hops, yeast, water</p>
-                        <p class="menu-item-price">$12</p>
-                    </div>
-                    <p class="menu-item-add">+</p>
-                </article>
+            <section class="menu" id="menu">
+                <!-- populated dynamically by JS -->
             </section>
 
             <section class="order">
@@ -107,6 +81,6 @@
             <button type="submit" id="pay" class="form-payment-pay-button">Pay</button>
         </form>
     </section>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

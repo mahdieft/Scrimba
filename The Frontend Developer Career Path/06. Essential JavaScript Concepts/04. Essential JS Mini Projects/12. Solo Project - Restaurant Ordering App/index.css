@@ -79,6 +79,10 @@ header p {
     font-size: 32px;
 }
 
+.order {
+    display: none;
+}
+
 .order h2 {
     margin-top: 45px;
     font-size: 28px;
