@@ -26,7 +26,7 @@ const render_order_summary = (orders, menu_map) => {
         order_summary += `
             <div class="order-item">
                 <p class="order-item-detail order-item-name">${menu_map.get(order_id).name}</p>
-                <p class="order-item-detail order-item-remove">remove</p>
+                <button class="order-item-detail order-item-remove" id="${order_id}">remove</button>
                 <p class="order-item-detail order-item-price">${menu_map.get(order_id).price * orders[order_id]}</p>
             </div>
         `;
