@@ -1,20 +1,7 @@
 import { createRoot } from 'react-dom/client';
-import Header from './Header.jsx';
-import MainContent from './MainContent.jsx';
-import Footer from './Footer.jsx';
+import APP from './App.jsx';
 
-const root = createRoot(document.getElementById('root'));
-
-function Page() {
-    return (
-        <>
-            <Header />
-            <MainContent />
-            <Footer />
-        </>
-    );
-}
-
+const root = createRoot(document.querySelector('#root'));
 root.render(
-    <Page />,
+    <APP />,
 );
