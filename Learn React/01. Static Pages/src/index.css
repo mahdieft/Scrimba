@@ -3,32 +3,29 @@
 }
 
 body {
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #27292C;
-    color: white;
+    margin: 0;
+    font-family: Inter, sans-serif;
 }
 
-h1 {
-    margin-top: 30px;
+header {
+    height: 90px;
+    background-color: #21222A;
+    padding: 30px 25px;
 }
 
-.header {
+nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    height: 100%;
 }
 
-.nav-list {
-    list-style: none;
-    display: flex;
+nav > img {
+    width: 40px;
+    margin-right: 7px;
 }
 
-.nav-list-item {
-    margin-left: 10px;
-    font-size: 1.1rem;
-}
-
-.nav-logo {
-    width: 55px;
+nav > span {
+    color: #61DAFB;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
