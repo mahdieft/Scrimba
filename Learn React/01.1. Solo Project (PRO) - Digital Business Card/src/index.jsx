@@ -1,4 +1,5 @@
 import { createRoot } from 'react-dom/client';
+import App from './components/App.jsx';
 
 const root = createRoot(document.querySelector('#root'));
-root.render(<h1>Mahdi, YOU ARE AWESOME</h1>);
+root.render(<App />);
