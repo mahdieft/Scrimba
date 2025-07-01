@@ -1,10 +1,10 @@
 export default function Footer() {
     return (
-        <section className="footer container">
-            <a className="footer-link" href="https://twitter.com"><i></i>Twitter</a>
-            <a className="footer-link" href="https://facebook.com"><i></i>Facebook</a>
-            <a className="footer-link" href="https://instagram.com"><i></i>Instagram</a>
-            <a className="footer-link" href="https://github.com"><i></i>Github</a>
+        <section className="footer">
+            <a className="footer-link" href="https://twitter.com"><i className="fa-brands fa-square-twitter"></i></a>
+            <a className="footer-link" href="https://facebook.com"><i className="fa-brands fa-square-facebook"></i></a>
+            <a className="footer-link" href="https://instagram.com"><i className="fa-brands fa-square-instagram"></i></a>
+            <a className="footer-link" href="https://github.com"><i className="fa-brands fa-square-github"></i></a>
         </section>
     );
 }
