@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 550px;
+    margin: 0 auto;
+}
+
+header {
+    background: #F6595A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 16px 0;
+}
+
+header > h1 {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: white;
+}
